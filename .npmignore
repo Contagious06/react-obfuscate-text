@@ -1,0 +1,13 @@
+node_modules/
+public/
+dist/
+.cache/
+.vscode/
+.idea/
+.DS_Store
+*.map
+example/
+images/
+.prettierrc
+tsconfig.json
+tslint.json
