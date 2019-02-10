@@ -1,8 +1,7 @@
 import * as React from 'react'
 import { render } from 'react-dom'
-import './index.css'
 
-import ObfuscateText from './components/obfuscateText/ObfuscateText'
+import ObfuscateText from './../src/ObfuscateText'
 
 interface State {
     text: string;

@@ -6,6 +6,6 @@ My intention is make it a little bit harder for basic scrapers to obtain emails,
 
 # Usage
 ```
-import ObfuscateText from "ObfuscateText";
+import ObfuscateText from "react-obfuscate-text";
 <ObfuscateText text="this@is.email" />
 ```
