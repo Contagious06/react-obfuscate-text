@@ -1,0 +1,8 @@
+node_modules/
+public/
+dist/
+.cache/
+.vscode/
+.idea/
+.DS_Store
+*.map

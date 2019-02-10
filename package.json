@@ -1,0 +1,58 @@
+{
+  "name": "react-obfuscate-text",
+  "version": "0.0.1",
+  "description": "Typescript with React, using parcel bundler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Contagious06/react-obfuscate-text"
+  },
+  "author": "Matthew Vlietstra",
+  "license": "MIT",
+  "main": "lib/ObfuscateText.js",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "npm run type-check && parcel build ./src/index.html --public-url '/'",
+    "build:lib": "parcel build ./src/components/obfuscateText/ObfuscateText.tsx --out-dir ./lib",
+    "build:types": "tsc --declaration --module amd --jsx react ./src/components/obfuscateText/ObfuscateText.tsx --out ./lib/ObfuscateText.js",
+    "lint": "tslint -c tslint.json 'src/**/*.tsx'",
+    "lint:fix": "tslint --fix -c tslint.json 'src/**/*.tsx'"
+  },
+  "engines": {
+    "node": ">= 8.11.0",
+    "npm": ">= 6.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/config/test-preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(test|spec).(ts|tsx|js)"
+    ]
+  },
+  "keywords": [
+    "Typescript",
+    "React",
+    "Parcel"
+  ],
+  "dependencies": {
+    "helpful-decorators": "^1.7.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "parcel-bundler": "^1.11.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
+  }
+}
