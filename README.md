@@ -1,8 +1,8 @@
 # Simple Obfuscate Text from Robots
-Inspired by Facebook splitting of "Sponsored" text to bypass adblockers:
+Inspired by Facebook splitting the "Sponsored" text try bypass adblockers:
 ![Facebook Sponsored](images/facebook.jpg "Facebook Sponsored")
 
-My intention is make it a little bit harder for basic scrapers to obtain emails, and phone numbers on my website.
+Instead of adblockers, I figured it could be a good way to make it a little bit harder for basic scrapers to obtain emails, and phone numbers on my website (without converting them to images).
 
 # Usage
 
