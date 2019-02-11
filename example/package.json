@@ -9,7 +9,8 @@
   "author": "Matthew Vlietstra",
   "license": "MIT",
   "scripts": {
-    "start": "parcel ./index.html"
+    "start": "parcel ./index.html",
+	"build": "parcel build ./index.html --out-dir ./../docs"
   },
   "engines": {
     "node": ">= 8.11.0",
