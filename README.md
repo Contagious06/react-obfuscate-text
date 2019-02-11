@@ -5,7 +5,15 @@ Inspired by Facebook splitting of "Sponsored" text to bypass adblockers:
 My intention is make it a little bit harder for basic scrapers to obtain emails, and phone numbers on my website.
 
 # Usage
+
+```
+npm install react-obfuscate-text --save
+```
+
 ```
 import ObfuscateText from "react-obfuscate-text";
-<ObfuscateText text="this@is.email" />
+
+const MyComp = () => {
+  return <ObfuscateText text="this@is.email" />;
+}
 ```
