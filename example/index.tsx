@@ -13,7 +13,8 @@ const textInterval = [
     "World",
     "Testing",
     "this@is.email",
-    "00 88 22 11"
+    "00 88 22 11",
+    "empty"
 ];
 
 class App extends React.Component<any, State>  {
@@ -56,10 +57,18 @@ class App extends React.Component<any, State>  {
     }
 
     render() {
+        const text = this.state.text;
         return <div>
             <h1>Obfuscate Text</h1>
+
             <div id="read">
-                <ObfuscateText text={this.state.text} />
+                <div>
+                    {text !== "empty" ? <ObfuscateText text={text} /> : null}
+                </div>
+                <div>
+                    <span>Not obfuscated: </span>
+                    {text !== "empty" ? <ObfuscateText text={text} /> : null}
+                </div>
             </div>
             <h1>Text Content</h1>
             <pre id="write">

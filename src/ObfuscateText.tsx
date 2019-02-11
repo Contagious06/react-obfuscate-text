@@ -23,8 +23,9 @@ const randStrGenerator = (range: string) => {
     };
 }
 
-const randText = randStrGenerator("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz");
-const randAlpha = randStrGenerator("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789");
+const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const randText = randStrGenerator(abc);
+const randAlpha = randStrGenerator(abc + "0123456789");
 
 const generate = (amount: number) => {
     const arr = new Array(amount);
@@ -77,6 +78,8 @@ class ObfuscateText extends React.Component<Props> {
     }
 
     componentWillUnmount() {
+        componentCount--;
+
         if (componentCount <= 0) {
             componentCount = 0;
 
