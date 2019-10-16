@@ -67,7 +67,7 @@ class App extends React.Component<any, State>  {
                 </div>
                 <div>
                     <span>Not obfuscated: </span>
-                    {text !== "empty" ? <ObfuscateText text={text} /> : null}
+                    {text !== "empty" ? text : null}
                 </div>
             </div>
             <h1>Text Content</h1>

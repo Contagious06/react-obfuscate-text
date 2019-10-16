@@ -6,6 +6,10 @@
     "jsx": "react",
     "rootDir": "./src",
     "experimentalDecorators": true,
-    "lib": ["dom", "es2015"]
-  }
+    "lib": ["dom", "es2015"],
+	"rootDir": "./src"
+  },
+  "exclude": [
+		"example"
+    ]
 }
